@@ -1,112 +1,120 @@
-Here's the complete markdown code for the Wisdomize Frontend documentation:
+# Wisdomize - Modern EdTech Platform 🎓
 
-```markdown
-# Wisdomize Frontend
+![Wisdomize Banner](https://via.placeholder.com/1200x400?text=Wisdomize+EdTech+Platform)
 
-**Wisdomize** is a modern EdTech platform built with React. This repository contains the frontend of the application, styled with Tailwind CSS and deployed as a static site.
+A responsive educational platform built with React, Tailwind CSS, and Vite that provides course management for students, instructors, and administrators.
 
-> 🌐 Live Site: [https://wisdomize-frontend.onrender.com](https://wisdomize-frontend.onrender.com)
+**Live Demo:** [https://wisdomize-frontend.onrender.com](https://wisdomize-frontend.onrender.com)
 
----
+## ✨ Features
 
-## Tech Stack
+- **Multi-role access control** (Admin, Instructor, Student)
+- **Course management system**
+- **Responsive design** (Mobile, Tablet, Desktop)
+- **Modern UI** with Tailwind CSS
+- **Secure authentication flow**
+- **API integration** with Axios
+- **Loading states** and error handling
 
-- React  
-- Vite (build tool)  
-- Tailwind CSS (utility-first CSS)  
-- React Router DOM (routing)  
-- Axios (HTTP client)  
-- Lucide Icons (icon set)  
-- Render (static site hosting)  
+## 🛠 Tech Stack
 
----
+**Frontend:**
+- React 18
+- Vite (Build Tool)
+- Tailwind CSS
+- React Router v6
+- Axios
+- Lucide Icons
 
-## Project Structure
+**Hosting:**
+- Render (Static Site)
 
+## 📂 Project Structure
+
+```bash
+src/
+├── assets/          # Static assets
+├── components/      # Reusable components
+├── context/         # React context providers
+├── layouts/         # Page layout components
+├── pages/           # Route pages
+├── routes/          # Route configuration
+├── App.jsx          # Main app component
+└── main.jsx         # Entry point
 ```
-wisdomize-frontend/
-├── public/
-├── src/
-│   ├── assets/
-│   ├── components/
-│   ├── context/
-│   ├── layouts/
-│   ├── pages/
-│   ├── routes/
-│   ├── App.jsx
-│   └── main.jsx
-├── index.html
-├── tailwind.config.js
-├── package.json
-└── vite.config.js
-```
 
----
+## 🚀 Getting Started
 
-## Getting Started
+### Prerequisites
+- Node.js (v16+ recommended)
+- npm (v8+ recommended)
 
-### Clone the repository
+### Installation
 
+1. Clone the repository:
 ```bash
 git clone https://github.com/Nandeesh-nh/wisdomize_frontend.git
 cd wisdomize_frontend
 ```
 
-### Install dependencies
-
+2. Install dependencies:
 ```bash
 npm install
 ```
 
-### Run development server
-
+3. Start development server:
 ```bash
 npm run dev
 ```
 
-Open http://localhost:5173 in your browser to see the app.
+Open [http://localhost:5173](http://localhost:5173) in your browser.
 
----
+## 🔧 Configuration
 
-## Deployment
+Create a `.env` file in the root directory:
+```env
+VITE_API_BASE_URL=https://wisdomize-backend.onrender.com
+```
 
-The frontend is deployed on Render as a static site.
+## 🏗 Building for Production
 
-**Build Command:**
 ```bash
-npm install && npm run build
+npm run build
 ```
 
-**Publish Directory:**
-```
-dist
-```
+The production-ready files will be in the `dist/` directory.
 
-**Live URL:**
-[https://wisdomize-frontend.onrender.com](https://wisdomize-frontend.onrender.com)
+## 🌐 Deployment
+
+The project is configured for deployment on Render as a static site:
+
+1. Set build command: `npm install && npm run build`
+2. Set publish directory: `dist`
+
+## 🤝 Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request.
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-## Features
+Made with ❤️ by [Nandeesh](https://github.com/Nandeesh-nh)
 
-- Role-based protected routes (Admin, Instructor, Student)
-- Browse and enroll in courses
-- Responsive UI with Tailwind CSS
-- Dynamic data fetching via Axios from backend APIs
-- Loading and error handling states
-- Fully mobile responsive
 
----
+### Key Improvements:
+1. Added visual banner placeholder (replace with actual image)
+2. Better organized sections with emoji headers
+3. Clearer feature listing
+4. Improved project structure visualization
+5. Added configuration section for environment variables
+6. More detailed deployment instructions
+7. Professional footer with license and attribution
 
-## Backend API
-
-Make sure the backend API is running and accessible (e.g., at [https://wisdomize-backend.onrender.com](https://wisdomize-backend.onrender.com)) for full functionality.
-
----
-
-## License
-
-This project is licensed under the MIT License.
-
-Feel free to contribute or report issues!
-```
+You can customize this further by:
+- Adding actual screenshots
+- Including badges (build status, license, etc.)
+- Adding more detailed API documentation if needed
+- Expanding the contribution guidelines
