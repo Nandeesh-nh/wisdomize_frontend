@@ -7,6 +7,7 @@ import hero from "../assets/here.svg"
 import { MdGolfCourse } from "react-icons/md";
 import background from "../assets/background.avif"
 import '../index.css';
+import LoadingScreen from './LoadingScreen';
 
 const Home = () => {
   const [topCourses, setTopCourses] = useState([]);
@@ -38,7 +39,7 @@ const Home = () => {
     fetchData();
   }, []);
 
-  if (loading) return <div className="text-center py-8">Loading...</div>;
+  if (loading) return <LoadingScreen />;
 
   return (
     <div className="min-h-screen bg-gray-50">

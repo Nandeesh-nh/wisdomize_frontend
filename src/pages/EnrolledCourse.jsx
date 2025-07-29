@@ -3,6 +3,7 @@ import { useParams, useLocation, useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 import axios from "axios";
 import { Star } from "lucide-react";
+import LoadingScreen from "./LoadingScreen";
 
 const EnrolledCourse = () => {
   const { enrolledCourseId } = useParams();
@@ -90,7 +91,7 @@ const EnrolledCourse = () => {
   };
 
   if (loading)
-    return <div className="flex items-center justify-center h-screen text-lg">Loading...</div>;
+    return <LoadingScreen />;
 
   if (!course)
     return <div className="flex items-center justify-center h-screen text-lg text-red-500">Course not found</div>;
