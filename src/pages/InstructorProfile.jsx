@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom'; // Import Link
 import axios from 'axios';
 import { Star, BookOpen, Users, Clock, GraduationCap, ChevronLeft } from 'lucide-react';
+import SectionLoader from '../components/SectionLoader';
 
 const InstructorProfile = () => {
   const { email } = useParams();
@@ -47,7 +48,7 @@ const InstructorProfile = () => {
     ));
   };
 
-  if (loading) return <div className="text-center py-12">Loading profile...</div>;
+  if (loading) return <SectionLoader message="Loading Profile..." />;
   if (error) return <div className="text-center py-12 text-red-500">{error}</div>;
   if (!instructor) return <div className="text-center py-12">Instructor not found</div>;
 

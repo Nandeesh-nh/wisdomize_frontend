@@ -2,6 +2,7 @@ import { useInstructors } from "../context/InstructorsContext";
 import { Link } from "react-router-dom";
 import { Star, BookOpen, Search } from "lucide-react";
 import React, { useState } from "react";
+import SectionLoader from '../components/SectionLoader';
 
 const Instructors = () => {
   const { instructors, loading, error } = useInstructors();
@@ -14,12 +15,7 @@ const Instructors = () => {
     instructor.email.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
-  if (loading)
-    return (
-      <div className="flex items-center justify-center h-screen text-gray-700 text-lg">
-        Loading instructors...
-      </div>
-    );
+if (loading) return <SectionLoader message="Loading Courses..." />;
   if (error)
     return (
       <div className="flex items-center justify-center h-screen text-red-500 text-lg">

@@ -4,6 +4,7 @@ import { useAuth } from "../context/AuthContext";
 import axios from "axios";
 import { Star } from "lucide-react";
 import LoadingScreen from "./LoadingScreen";
+import SectionLoader from '../components/SectionLoader';
 
 const EnrolledCourse = () => {
   const { enrolledCourseId } = useParams();
@@ -90,8 +91,7 @@ const EnrolledCourse = () => {
     }
   };
 
-  if (loading)
-    return <LoadingScreen />;
+if (loading) return <SectionLoader message="Loading Courses..." />;
 
   if (!course)
     return <div className="flex items-center justify-center h-screen text-lg text-red-500">Course not found</div>;

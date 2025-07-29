@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom'; // Import useNavigate
 import { Search, Filter, Trash2, Plus } from 'lucide-react';
 import axios from 'axios';
 import { AuthContext } from "../context/AuthContext";
+import SectionLoader from '../components/SectionLoader';
 
 const CourseManagement = () => {
   const [courses, setCourses] = useState([]);
@@ -67,7 +68,7 @@ const CourseManagement = () => {
     }
   };
 
-  if (loading) return <div className="text-center py-8">Loading courses...</div>;
+  if (loading) return <SectionLoader message="Loading Course..." />;
   if (error) return <div className="text-center py-8 text-red-500">{error}</div>;
 
   return (

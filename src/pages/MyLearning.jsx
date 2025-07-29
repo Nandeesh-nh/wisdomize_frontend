@@ -3,6 +3,7 @@ import { useAuth } from "../context/AuthContext";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import { Star, BookOpen, Clock } from "lucide-react";
+import SectionLoader from '../components/SectionLoader';
 
 const MyLearning = () => {
   const { user } = useAuth();
@@ -41,7 +42,7 @@ const MyLearning = () => {
     fetchEnrolledCourses();
   }, [user]);
 
-  if (loading) return <div className="flex items-center justify-center h-screen text-lg">Loading...</div>;
+  if (loading) return <SectionLoader message="Loading Courses..." />;
   if (error) return <div className="flex items-center justify-center h-screen text-lg text-red-500">{error}</div>;
 
   return (
