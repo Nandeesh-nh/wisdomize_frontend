@@ -4,6 +4,7 @@ import axios from 'axios';
 import { useCourse } from '../context/CoursesContext';
 import { Star, Search, BookOpen, Clock } from 'lucide-react';
 import LoadingScreen from './LoadingScreen';
+import SectionLoader from '../components/SectionLoader';
 
 const Courses = () => {
   const { courses, setCourses } = useCourse();
