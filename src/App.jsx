@@ -22,6 +22,7 @@ import CourseManagementLayout from "./layouts/CourseManagementLayout"
 import InstructorsPage from "./pages/Instructors.jsx";
 import InstructorProfile from "./pages/InstructorProfile.jsx";
 import EnrolledCourse from "./pages/EnrolledCourse.jsx";
+import NotFound from "./layouts/NotFound.jsx";
 
 export default function App() {
   return (
@@ -89,6 +90,7 @@ export default function App() {
           <Route path="create_course" element={<CreateCourse />} />
           <Route path="create_course/add_videos" element={<AddVideos />} />
         </Route>
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </AuthProvider>
