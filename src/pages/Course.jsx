@@ -3,6 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useAuth } from "../context/AuthContext";
 import { Star, Clock, BookOpen, User,ChevronLeft } from "lucide-react";
+import LoadingScreen from "./LoadingScreen";
 
 const Course = () => {
   const { user } = useAuth();
@@ -63,7 +64,7 @@ const Course = () => {
     }
   };
 
-  if (loading) return <div className="text-center p-8">Loading...</div>;
+  if (loading) return <LoadingScreen  />;
 
   return (
     <div className="relative min-h-screen bg-gray-50 py-8 px-4">

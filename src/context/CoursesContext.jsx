@@ -7,7 +7,7 @@ export const CoursesProvider = ({ children }) => {
   const [courses, setCourses] = useState([]);
 
   useEffect(() => {
-    fetch("/api/courses")
+    fetch("https://wisdomize-backend.onrender.com/api/courses")
       .then((res) => res.json())
       .then((data) => setCourses(data))
       .catch((err) => console.error("Failed to fetch courses", err));

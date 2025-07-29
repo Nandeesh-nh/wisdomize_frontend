@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { useCourse } from '../context/CoursesContext';
 import { Star, Search, BookOpen, Clock } from 'lucide-react';
+import LoadingScreen from './LoadingScreen';
 
 const Courses = () => {
   const { courses, setCourses } = useCourse();
@@ -57,7 +58,7 @@ const Courses = () => {
     ));
   };
 
-  if (loading) return <div className="text-center py-8 text-xl">Loading...</div>;
+  if (loading) return <LoadingScreen />;
   if (error) return <div className="text-center py-8 text-red-500">{error}</div>;
 
   return (
