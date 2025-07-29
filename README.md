@@ -1,3 +1,6 @@
+Here's the complete markdown code for the Wisdomize Frontend documentation:
+
+```markdown
 # Wisdomize Frontend
 
 **Wisdomize** is a modern EdTech platform built with React. This repository contains the frontend of the application, styled with Tailwind CSS and deployed as a static site.
@@ -8,37 +11,35 @@
 
 ## Tech Stack
 
-- React
-- Vite (build tool)
-- Tailwind CSS (utility-first CSS)
-- React Router DOM (routing)
-- Axios (HTTP client)
-- Lucide Icons (icon set)
-- Render (static site hosting)
+- React  
+- Vite (build tool)  
+- Tailwind CSS (utility-first CSS)  
+- React Router DOM (routing)  
+- Axios (HTTP client)  
+- Lucide Icons (icon set)  
+- Render (static site hosting)  
 
 ---
 
 ## Project Structure
 
+```
 wisdomize-frontend/
 ├── public/
 ├── src/
-│ ├── assets/
-│ ├── components/
-│ ├── context/
-│ ├── layouts/
-│ ├── pages/
-│ ├── routes/
-│ ├── App.jsx
-│ └── main.jsx
+│   ├── assets/
+│   ├── components/
+│   ├── context/
+│   ├── layouts/
+│   ├── pages/
+│   ├── routes/
+│   ├── App.jsx
+│   └── main.jsx
 ├── index.html
 ├── tailwind.config.js
 ├── package.json
 └── vite.config.js
-
-yaml
-Copy
-Edit
+```
 
 ---
 
@@ -49,47 +50,63 @@ Edit
 ```bash
 git clone https://github.com/Nandeesh-nh/wisdomize_frontend.git
 cd wisdomize_frontend
-Install dependencies
-bash
-Copy
-Edit
+```
+
+### Install dependencies
+
+```bash
 npm install
-Run development server
-bash
-Copy
-Edit
+```
+
+### Run development server
+
+```bash
 npm run dev
+```
+
 Open http://localhost:5173 in your browser to see the app.
 
-Deployment
+---
+
+## Deployment
+
 The frontend is deployed on Render as a static site.
 
-Build Command:
+**Build Command:**
+```bash
 npm install && npm run build
+```
 
-Publish Directory:
+**Publish Directory:**
+```
 dist
+```
 
-Live URL:
-https://wisdomize-frontend.onrender.com
+**Live URL:**
+[https://wisdomize-frontend.onrender.com](https://wisdomize-frontend.onrender.com)
 
-Features
-Role-based protected routes (Admin, Instructor, Student)
+---
 
-Browse and enroll in courses
+## Features
 
-Responsive UI with Tailwind CSS
+- Role-based protected routes (Admin, Instructor, Student)
+- Browse and enroll in courses
+- Responsive UI with Tailwind CSS
+- Dynamic data fetching via Axios from backend APIs
+- Loading and error handling states
+- Fully mobile responsive
 
-Dynamic data fetching via Axios from backend APIs
+---
 
-Loading and error handling states
+## Backend API
 
-Fully mobile responsive
+Make sure the backend API is running and accessible (e.g., at [https://wisdomize-backend.onrender.com](https://wisdomize-backend.onrender.com)) for full functionality.
 
-Backend API
-Make sure the backend API is running and accessible (e.g., at https://wisdomize-backend.onrender.com) for full functionality.
+---
 
-License
-This project uses the MIT License.
+## License
+
+This project is licensed under the MIT License.
 
 Feel free to contribute or report issues!
+```
