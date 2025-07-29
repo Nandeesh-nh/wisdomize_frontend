@@ -58,7 +58,7 @@ const Courses = () => {
     ));
   };
 
-  if (loading) return <LoadingScreen />;
+  if (loading) return <SectionLoader message="Loading Courses..." />;
   if (error) return <div className="text-center py-8 text-red-500">{error}</div>;
 
   return (
