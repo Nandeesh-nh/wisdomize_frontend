@@ -1,7 +1,5 @@
 # Wisdomize - Modern EdTech Platform 🎓
 
-![Wisdomize Banner](https://via.placeholder.com/1200x400?text=Wisdomize+EdTech+Platform)
-
 A responsive educational platform built with React, Tailwind CSS, and Vite that provides course management for students, instructors, and administrators.
 
 **Live Demo:** [https://wisdomize-frontend.onrender.com](https://wisdomize-frontend.onrender.com)
@@ -102,19 +100,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 Made with ❤️ by [Nandeesh](https://github.com/Nandeesh-nh)
-
-
-### Key Improvements:
-1. Added visual banner placeholder (replace with actual image)
-2. Better organized sections with emoji headers
-3. Clearer feature listing
-4. Improved project structure visualization
-5. Added configuration section for environment variables
-6. More detailed deployment instructions
-7. Professional footer with license and attribution
-
-You can customize this further by:
-- Adding actual screenshots
-- Including badges (build status, license, etc.)
-- Adding more detailed API documentation if needed
-- Expanding the contribution guidelines
