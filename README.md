@@ -98,5 +98,3 @@ Contributions are welcome! Please open an issue or submit a pull request.
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
-
-Made with ❤️ by [Nandeesh](https://github.com/Nandeesh-nh)
