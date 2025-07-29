@@ -17,6 +17,10 @@ const Course = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    if (!user) {
+    navigate("/login");
+    return;
+   } 
     const fetchData = async () => {
       try {
         
